@@ -1,0 +1,19 @@
+{
+  "name": "designo-multi-page-website",
+  "version": "1.0.0",
+  "description": "![Design preview for the Designo Agency Website Challenge coding challenge](./preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1", 
+    "start": "node src/app.js",
+    "nodemon": "nodemon --watch src src/app.js ", 
+    "sassWatch": "sass --watch src/dev/style.scss src/public/stylesheets/style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.1.1",
+    "sass": "^1.30.0"
+  }
+}

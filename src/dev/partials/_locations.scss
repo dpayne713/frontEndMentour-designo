@@ -1,0 +1,206 @@
+.locations {
+    max-width: 111rem;
+    height: 104.2rem; 
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    @media screen and (max-width: 950px) {
+        height: 227.5rem;
+    }
+    @media screen and (max-width: 650px) {
+        height: 222.2rem;
+    }
+
+    margin: 0 auto 12rem auto; 
+    &__row {
+        width: 100%; 
+        height: 32.6rem; 
+        border-radius: 1rem;
+        overflow: hidden;
+
+        display: flex; 
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      
+
+        &:nth-of-type(2) {
+            flex-direction: row-reverse;
+
+            @media screen and (max-width: 950px) {
+                flex-direction: column-reverse;
+            }
+        }
+
+        @media screen and (max-width: 950px) {
+            width: 66.9rem;
+            height: 68.3rem; 
+            flex-direction: column-reverse; 
+        }
+        @media screen and (max-width: 650px) {
+            width: 100%; 
+            height: 71.4rem; 
+            border-radius: none;
+        }
+
+        
+
+        &-detail {
+            flex-basis: 73rem;
+            height: 32.6rem; 
+            border-radius: 1rem;
+
+            background-color: var(--about-cardBackground);
+            background-image: url(/assets/shared/desktop/bg-pattern-two-circles.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: bottom;
+
+            overflow: hidden;
+
+            display: flex; 
+            align-items: center;
+            justify-content: center;
+
+            @media screen and (max-width: 950px) {
+                flex: none; 
+                width: 66.9rem;
+                height: 32.6rem; 
+            }
+            @media screen and (max-width: 650px) {
+                width: 100%; 
+                height: 39.4rem; 
+                
+            }
+
+            &-container {
+                height: 15rem; 
+                width: 54rem; 
+
+                display: flex; 
+                flex-direction: column;
+                align-items: flex-start; 
+                justify-content: space-between;
+
+                @media screen and (max-width: 950px) {
+                    width: 54rem;
+                    height: 15rem; 
+                }
+
+                @media screen and (max-width: 650px) {
+                    width: 32.7rem; 
+                    height: 23.4rem; 
+                    align-items: center;
+                }
+
+            }
+
+            &-top {
+                width: fit-content;
+                height: 4.8rem;
+
+                &-h3{
+                    font-size: 4rem;
+                    line-height: 4.8rem;
+                    font-weight: 500;
+                    color: var(--primary-peach); 
+                }
+            }
+            &-btm {
+                width: 54rem; 
+                height: 7.8rem;
+
+                display: flex; 
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+
+                @media screen and (max-width: 650px) {
+                    flex-direction: column;
+                    height: 17.4rem; 
+                    text-align: center;
+                    
+                }
+
+                &-address {
+                    width: 25.5rem; 
+                    height: 7.8rem; 
+
+                    &-HEADLINE {
+                        font-size: 1.6rem;
+                        line-height: 2.6rem;
+                        font-weight: 700;
+                        color: var(--primary-black); 
+                    }
+                    &-INFO {
+                        font-size: 1.6rem;
+                        line-height: 2.6rem;
+                        font-weight: 400;
+                        color: var(--primary-black); 
+                    }
+                }
+
+            }
+        }
+        &-image {
+            flex-basis: 35rem;
+            height: 32.6rem; 
+            border-radius: 1rem;
+            overflow: hidden; 
+
+            &:nth-of-type(1) {
+                @media screen and (max-width: 950px) {
+                   background-image: url(/assets/locations/tablet/image-map-canada.png); 
+                }
+                @media screen and (max-width: 650px) {
+                    background-image: none;
+                }
+            }
+            &:nth-of-type(2) {
+                @media screen and (max-width: 950px) {
+                    background-image: url(/assets/locations/tablet/image-map-australia.png); 
+                }
+                @media screen and (max-width: 650px) {
+                    background-image: none;
+                }
+            }
+            &:nth-of-type(3) {
+                @media screen and (max-width: 950px) {
+                   background-image: url(/assets/locations/tablet/image-map-uk.png); 
+                }
+                @media screen and (max-width: 650px) {
+                    background-image: none;
+                }
+            }
+
+            @media screen and (max-width: 950px) {
+                flex: none;
+                width: 66.9rem;
+                height: 32.6rem; 
+            }
+            @media screen and (max-width: 650px) {
+                width: 100%; 
+                height: 32rem; 
+                border-radius: 0rem;
+            }
+
+            & img {
+                min-height: 100%; 
+                width: 100%; 
+                object-position: center;
+                object-fit: cover;
+
+                @media screen and (max-width: 950px) {
+                    display: none; 
+                }
+                @media screen and (max-width: 650px) {
+                    display: block; 
+
+                }
+
+            }
+        }
+    }
+}

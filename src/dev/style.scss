@@ -1,0 +1,121 @@
+:root {
+    --primary-peach : #e7816b; 
+    --primary-black : #1d1c1e; 
+    --primary-white : #FFFFFF ;
+
+    --secondary-peach : #FFAD9B; 
+    --secondary-darkGray : #333136; 
+    --secondary-lightGray : #F1F3F5; 
+
+    --about-cardBackground : #FDF3F0; 
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*,
+*::before, 
+*::after {
+    box-sizing: inherit;
+    padding: 0; 
+    margin: 0; 
+}
+a, a:visited{
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+    width: 100vw; 
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar {
+        width: 10px; 
+        opacity: 0; 
+        &-track {
+            background-color: var(--secondary-darkGray);
+            &-piece {
+                background-color: var(--secondary-darkGray);
+            }
+        }
+        &-thumb {
+            background-color: var(--primary-peach);
+            border-radius: 1rem;
+        }
+    }
+}
+
+.padding__container-MOBILE-NONE {
+    padding: 0 2rem; 
+    
+    @media screen and (max-width: 650px) {
+        padding: 0 0; 
+    }
+}
+.padding__container-ALWAYS{
+    padding: 0 2rem;
+}
+
+
+
+//SHARED STYLES IMPORT
+@import 'partials/shared'; 
+
+// HEADER SPECIFIC STYLES 
+@import 'partials/header';
+
+// INDEX SPECIFIC STYLES 
+@import 'partials/index'; 
+
+// WEB DESIGN STYLES 
+@import 'partials/web-design'; 
+
+// ABOUT DESIGN STYLES  
+@import 'partials/about'; 
+
+// LOCATIONS DESIGN STYLES
+@import 'partials/locations'; 
+
+// CONTACT SPECIFIC STYLES
+@import 'partials/contact'; 
+
+// FOOTER SPECIFIC STYLES
+@import 'partials/footer'; 
+
+.display-none {
+    display: none; 
+}
+
+.stop-scroll {
+    height: 100%; 
+    overflow: hidden;
+}
+
+.stickyTOP {
+    position: sticky; 
+    top: 0; 
+    left: 0; 
+    
+    animation-name: stickyTopFADE;
+    animation-duration: .5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes stickyTopFADE {
+    0% {
+        opacity: 0; 
+        transform: translateY(-20rem);
+    }
+    100% {
+        opacity: .9; 
+        transform: translateY(0rem);
+        height: 10rem; 
+    }
+}

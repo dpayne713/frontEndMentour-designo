@@ -1,0 +1,70 @@
+
+{{#if fullFooter}}
+<footer class="footer">
+    <div class="footer__content">
+        <div class="footer__content-top">
+            <div class="footer__content-top-left">
+                <h3 class="footer__content-top-left-HEADLINE">Let's talk about <br>your project</h3>
+                <p class="footer__content-top-left-TEXT">Ready to take it to the next level? Contact us today and find out how our expertise can help your business grow.</p>
+            </div>
+            <div class="footer__content-top-right">
+                <a href="/contact" class="footer__content-top-right-CONTACT CONTACT">Get in touch</a>
+            </div>
+        </div>
+{{/if}}
+
+{{#unless fullFooter}}
+
+<footer class="footer-CONTACT">
+    <div class="footer__content-CONTACT">
+{{/unless}}
+
+        <div class="footer__content-lower {{#unless fullFooter}}footer__content-lower-CONTACT{{/unless}}">
+            <div class="footer__content-lower-container">
+                <div class="footer__content-lower-top">
+                    <div class="footer__content-lower-top-left">
+                        <a href="/"><img src="assets/shared/desktop/logo-light.png" class="header__content-left-LOGO INDEX" alt="designo logo"></a>
+                    </div>
+                    <div class="footer__content-lower-top-right">
+                        <a href="/about" class="footer__content-lower-top-right-selection ABOUT">Our Company</a>
+                        <a href="/locations" class="footer__content-lower-top-right-selection LOCATIONS">Locations</a>
+                        <a href="/contact" class="footer__content-lower-top-right-selection CONTACT">Contact</a>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="footer__content-lower-container">
+                <div class="footer__content-lower-line"></div>
+            </div>
+            
+            <div class="footer__content-lower-container">
+
+                    
+                <div class="footer__content-lower-btm">
+                    
+                    <div class="footer__content-lower-btm-left">
+
+                        <div class="footer__content-lower-btm-left-ADDRESS">
+                            <span class="footer__content-lower-btm-left-ADDRESS-OFFICE">Designo Central Office</span><br>
+                            <span class="footer__content-lower-btm-left-ADDRESS-STREETADDY">3886 Wellington Street</span><br>
+                            <span class="footer__content-lower-btm-left-ADDRESS-STREETADDY">Toronto, Ontario M9C 3J5</span>
+                        </div>
+
+                        <div class="footer__content-lower-btm-left-ADDRESS">
+                            <span class="footer__content-lower-btm-left-ADDRESS-OFFICE">Contact Us (Central Office)</span><br>
+                            <span class="footer__content-lower-btm-left-ADDRESS-STREETADDY">P : +1 253-863-8967</span><br>
+                            <span class="footer__content-lower-btm-left-ADDRESS-STREETADDY">M : contact@designo.co</span>
+                        </div>
+                    </div>
+                    <div class="footer__content-lower-btm-right">
+                        <a href="https://www.facebook.com" target="_blank"><img src="assets/shared/desktop/icon-facebook.svg" alt="Socials Facebook" class="footer__content-lower-btm-right-SOCIALS"></a>
+                        <a href="https://www.youtube.com" target="_blank"><img src="assets/shared/desktop/icon-youtube.svg" alt="Socials Youtube" class="footer__content-lower-btm-right-SOCIALS"></a>
+                        <a href="https://www.twitter.com" target="_blank"><img src="assets/shared/desktop/icon-twitter.svg" alt="Socials Twitter" class="footer__content-lower-btm-right-SOCIALS"></a>
+                        <a href="https://www.pintrest.com" target="_blank"><img src="assets/shared/desktop/icon-pinterest.svg" alt="Socials Pintrest" class="footer__content-lower-btm-right-SOCIALS"></a>
+                        <a href="https://www.instagram.com" target="_blank"><img src="assets/shared/desktop/icon-instagram.svg" alt="Socials Instagram" class="footer__content-lower-btm-right-SOCIALS"></a>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+</footer>
